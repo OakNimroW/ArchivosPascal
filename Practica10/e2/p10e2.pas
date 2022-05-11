@@ -1,7 +1,7 @@
 program p10e2;
 const
   fin = 0;
-
+  
 type
   dato = integer;
 
@@ -16,7 +16,7 @@ procedure agregarNumeroLista( var l : lista; n : integer);
     nuevoNodo : lista;
   begin
     New(nuevoNodo);
-    nuevoNodo^.dato := n;
+    nuevoNodo^.datos := n;
     nuevoNodo^.sig := l;
     l := nuevoNodo;
   end;
@@ -37,7 +37,7 @@ procedure ultimosNumerosPar( l : lista; var n1, n2 : integer);
   var
     act : lista;
   begin
-    act : lista;
+    act := l;
     n1 := 0;
     n2 := 0;
     while (act <> nil) do begin
