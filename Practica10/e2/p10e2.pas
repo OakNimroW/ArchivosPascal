@@ -1,7 +1,7 @@
 program p10e2;
 const
   fin = 0;
-  
+
 type
   dato = integer;
 
@@ -30,25 +30,38 @@ function cantNumConDigImpar(n : integer): boolean;
       cantDig := cantDig + 1;
       n := n DIV 10;
     end;
-    cantNumConDigImpar := cantDig DIV 2 <> 0;
+    cantNumConDigImpar := cantDig MOD 2 <> 0;
   end;
 
-procedure ultimosNumerosPar( l : lista; var n1, n2 : integer);
+procedure ultimosNumerosPar( l : lista; var ultimoNumero , prevUltimoNumero : integer);
   var
     act : lista;
   begin
     act := l;
-    n1 := 0;
-    n2 := 0;
+    ultimoNumero  := 0;
+    prevUltimoNumero := 0;
     while (act <> nil) do begin
-      if (act^.datos DIV 2) then begin
-        n2 := n1;
-        n1 := act^.datos;
+      if (act^.datos MOD 2 = 0) then begin
+        ultimoNumero  := prevUltimoNumero;
+        prevUltimoNumero := act^.datos;
       end;
       act := act^.sig;
     end;
   end;
 
+procedure borrarEspacioLista( var l : lista);
+  var
+    act, ant : lista;
+  begin
+    act := l;
+    while (act <> nil) do begin
+      ant := act;
+      act := act^.sig;
+      Dispose(ant);
+    end;
+    l := act;
+  end;
+ 
 
 var
   listaPri : lista;
@@ -63,6 +76,7 @@ begin
   listaPri := nil;
   
   cantNumDigImpar := 0;
+  WriteLn('ingresar numero para la lista');
   read(nuevoNumero);
   mayorNumero := nuevoNumero;
 
@@ -73,6 +87,7 @@ begin
 
     if (cantNumConDigImpar(nuevoNumero)) then cantNumDigImpar := cantNumDigImpar + 1;
 
+    WriteLn('ingresar numero para la lista');
     read(nuevoNumero);
   
   end;
@@ -81,7 +96,9 @@ begin
 
   WriteLn('Mayor numero Leido: ', mayorNumero);
   WriteLn('Cantidad de numeros con cantidad de digitos es impar: ', cantNumDigImpar);
-  WriteLn('Ultimos dos numeros pares de la lista', numeroParUltimo, ' y ', numeroParAnteUltimo);
+  WriteLn('Ultimos dos numeros pares de la lista ', numeroParUltimo, ' y ', numeroParAnteUltimo);
+
+  borrarEspacioLista(listaPri);
 
 end.
 
