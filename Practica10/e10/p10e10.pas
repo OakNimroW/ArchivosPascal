@@ -1,11 +1,10 @@
-program p10e1;
+program p10e10;
 begin
   
 end.
 
 {
-  Escribir un programa que lea una secuencia de números enteros terminada en 999 y los almacene en una lista simple. Utilizando la lista creada implementar:
-  a) un módulo que reciba la lista y devuelva como resultado la cantidad de números con 3 dígitos.
-  b) un módulo que reciba la lista y un número y determine si dicho número está o no en la lista. La búsqueda debe terminar al encontrar la primera ocurrencia del número buscado.
-  c) Un módulo que reciba la lista y libere la memoria reservada.
+  Una casa de venta de comidas ofrece a la venta una variedad de platos. La misma cuenta con un software que utiliza dos estructuras de datos: una en donde almacena la información de sus clientes: código de cliente, apellido, nombre, domicilio y teléfono; y otra en donde almacena la información de los 100 platos diferentes que dispone. Los platos se encuentran codificados del 1 al 100 y de cada uno se sabe: nombre y stock disponible. Realizar un programa que:
+  a) Lea información de pedidos de platos de comida. De cada pedido se conoce el código de cliente que desea hacer el pedido, el código del plato que solicita y la cantidad de ese plato. Para que el pedido pueda llevarse a cabo se deben realizar las validaciones correspondientes y en caso de no existir ningún inconveniente, realizar la venta del mismo, caso contrario, informar porque la venta no pudo ser realizada. Tener en cuenta que el código de cliente debe ser de un cliente almacenado por la empresa, y debe existir suficiente stock del plato pedido. La recepción de pedidos finaliza cuando se lee un código de cliente igual a -1.
+  b) Una vez finalizada la recepción de solicitudes informar aquellos platos que ya no tienen más stock disponible.
 }
