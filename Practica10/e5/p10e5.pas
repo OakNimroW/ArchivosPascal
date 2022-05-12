@@ -1,11 +1,12 @@
-program p10e1;
+program p10e5;
 begin
   
 end.
 
 {
-  Escribir un programa que lea una secuencia de números enteros terminada en 999 y los almacene en una lista simple. Utilizando la lista creada implementar:
-  a) un módulo que reciba la lista y devuelva como resultado la cantidad de números con 3 dígitos.
-  b) un módulo que reciba la lista y un número y determine si dicho número está o no en la lista. La búsqueda debe terminar al encontrar la primera ocurrencia del número buscado.
-  c) Un módulo que reciba la lista y libere la memoria reservada.
+  Un congreso de Informática dispone de una lista con la información de sus participantes. De cada participante, se conoce: Apellido y Nombre, Sexo, Área de Investigación a la que se dedica y País de procedencia.
+  Se desea procesar la información para:
+  a) Informar los nombres de las participantes “Mujeres”, con país de procedencia “Argentina” y cuya Área de Investigación es “Accesibilidad Web”. Además, la cantidad total de participantes que cumplen con tal condición.
+  b) Calcular e informar el porcentaje de participantes que provienen de países que no son “Argentina”.
+  c) Generar una nueva lista ordenada por Área de Investigación.
 }
