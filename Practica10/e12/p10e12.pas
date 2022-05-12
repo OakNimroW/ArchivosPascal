@@ -1,11 +1,11 @@
-program p10e1;
+program p10e12;
 begin
   
 end.
 
 {
-  Escribir un programa que lea una secuencia de números enteros terminada en 999 y los almacene en una lista simple. Utilizando la lista creada implementar:
-  a) un módulo que reciba la lista y devuelva como resultado la cantidad de números con 3 dígitos.
-  b) un módulo que reciba la lista y un número y determine si dicho número está o no en la lista. La búsqueda debe terminar al encontrar la primera ocurrencia del número buscado.
-  c) Un módulo que reciba la lista y libere la memoria reservada.
+  Realice dos módulos que reciban dos listas ordenadas de enteros A y B y devuelvan:
+  a) En el primer módulo: otra lista C ordenada que sea la resultante de unir las dos listas recibidas.
+  b) En el segundo módulo: la lista A donde se inserten los elementos de la lista B, y la lista A continúa ordenada.
+  Realice además un tercer módulo que reciba la lista A, y un número entero, y se eliminen todas las ocurrencias de ese número de la lista.
 }
