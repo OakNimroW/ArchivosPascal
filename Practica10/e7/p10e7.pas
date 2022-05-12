@@ -1,11 +1,8 @@
-program p10e1;
+program p10e7;
 begin
   
 end.
 
 {
-  Escribir un programa que lea una secuencia de números enteros terminada en 999 y los almacene en una lista simple. Utilizando la lista creada implementar:
-  a) un módulo que reciba la lista y devuelva como resultado la cantidad de números con 3 dígitos.
-  b) un módulo que reciba la lista y un número y determine si dicho número está o no en la lista. La búsqueda debe terminar al encontrar la primera ocurrencia del número buscado.
-  c) Un módulo que reciba la lista y libere la memoria reservada.
+  Un banco dispone de una lista con la información de pago de sus jubilados (Documento, apellido, nombre y monto a pagar). Debido a que la cantidad de jubilados para cobrar es muy grande se decidió pagarles en 10 días diferentes agrupándolos por el último dígito de su documento. Escribir un programa que implemente la separación de la lista en 10 listas diferentes conservando el orden original en cada lista.
 }
