@@ -1,11 +1,11 @@
-program p10e1;
+program p10e11;
 begin
   
 end.
 
 {
-  Escribir un programa que lea una secuencia de números enteros terminada en 999 y los almacene en una lista simple. Utilizando la lista creada implementar:
-  a) un módulo que reciba la lista y devuelva como resultado la cantidad de números con 3 dígitos.
-  b) un módulo que reciba la lista y un número y determine si dicho número está o no en la lista. La búsqueda debe terminar al encontrar la primera ocurrencia del número buscado.
-  c) Un módulo que reciba la lista y libere la memoria reservada.
+  Un deportólogo está realizando una investigación sobre el rendimiento de los maratonistas. Se seleccionan 50 maratonistas para ser estudiados. De cada uno se conoce el nombre, apellido, género, y el tiempo (minutos y segundos) registrado en cada maratón que ha corrido. El deportólogo necesita un programa para:
+  a) Cargar la información de los 50 maratonistas. Para esto puede seleccionar el criterio que desee para cargar el tiempo de las maratones.
+  b) Informar para cada maratonista, la maratón con el mejor tiempo de desempeño.
+  c) Calcular el promedio de tiempo de cada maratonista.
 }
