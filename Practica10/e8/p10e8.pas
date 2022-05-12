@@ -1,11 +1,10 @@
-program p10e1;
+program p10e8;
 begin
   
 end.
 
 {
-  Escribir un programa que lea una secuencia de números enteros terminada en 999 y los almacene en una lista simple. Utilizando la lista creada implementar:
-  a) un módulo que reciba la lista y devuelva como resultado la cantidad de números con 3 dígitos.
-  b) un módulo que reciba la lista y un número y determine si dicho número está o no en la lista. La búsqueda debe terminar al encontrar la primera ocurrencia del número buscado.
-  c) Un módulo que reciba la lista y libere la memoria reservada.
+  Una empresa mantiene una lista de empleados. De un empleado se conoce su código de empleado, apellido y nombre, profesión, código de departamento al que pertenece, sueldo básico y antigüedad. Dicha lista está ordenada por código de empleado. Suponiendo que la lista ya existe se pide:
+  a) Realizar un módulo que reciba un nuevo empleado y lo incorpore a la lista de empleados de la empresa (manteniendo el orden).
+  b) Implementar un módulo que elimine de la lista todos los empleados que pertenezcan al departamento 4 o al departamento 10 (estos departamentos pueden no existir).
 }
